@@ -69,6 +69,14 @@ b_combobox.bind("<<ComboboxSelected>>", update_b_label)
 b_label = ttk.Label()
 b_label.pack(padx=10, pady=10)
 
+Label(text="Вторая базовая валюта").pack(padx=10, pady=10)
+e_combobox = ttk.Combobox(values=list(cur.keys()))
+e_combobox.pack(padx=10, pady=10)
+
+
+e_label = ttk.Label()
+e_label.pack(padx=10, pady=10)
+
 Label(text="Целевая валюта").pack(padx=10, pady=10)
 
 t_combobox = ttk.Combobox(values=list(cur.keys()))
